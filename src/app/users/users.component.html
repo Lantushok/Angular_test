@@ -1,0 +1,21 @@
+<div class="users">
+    <div class="container">
+        <h2>Our cheerful users</h2>
+        <p>Attention! Sorting users by registration date</p>
+
+        <div class="info">
+            <div *ngFor='let user of users' class="oneuser">
+                <img src="{{user.photo}}" alt="">
+                <div class="text">
+                    <h4>{{user.name}}</h4>
+                    <p>{{user.position}}</p>
+                    <p>{{user.email}}</p>
+                    <p>{{user.phone}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <button *ngIf='this.page<this.max_page' (click)='addUsers(6)'>Show more</button>
+    <!-- <button (click)='addUsers(3)'>show more(3)</button> -->
+</div>

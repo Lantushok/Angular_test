@@ -1,0 +1,17 @@
+// mat-form-field {
+//     position: relative;
+//     & /deep/.mat-form-field-label {
+//         position: absolute;
+//         left: 0;
+//         font: inherit;
+//         pointer-events: none;
+//         width: 100%;
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         transform-origin: 0 0;
+//     }
+// }
+mat-form-field {
+    width: 288px;
+}

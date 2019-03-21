@@ -1,0 +1,21 @@
+<form [formGroup]='registration'>
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Your name" formControlName='name'>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Your email" formControlName='email'>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Your phone" formControlName='phone'>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select formControlName='position' placeholder='Select your position'>
+            <mat-option *ngFor='let position of positions' value='{{position.id}}'>{{position.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <input type="file" (change)='onFileSelected($event)'>
+    <button (click)='postUser()' [disabled]='registration.invalid'> submit </button>
+</form>

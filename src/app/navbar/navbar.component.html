@@ -1,0 +1,21 @@
+<nav>
+    <header>
+        <img src="../../../files/logo/logo.svg" class="logo" alt="logo">
+        <div class="menu">
+            <li *ngFor='let item of menu_items'>
+                <a href="{{item.link}}">{{item.name}}</a>
+            </li>
+        </div>
+        <div class="current-user" *ngIf="!isLoading">
+            <div class="info">
+                <p class="name">{{currentUserInfo.name}}</p>
+                <p class="e-mail">{{currentUserInfo.email}}</p>
+            </div>
+            <img src="{{currentUserInfo.photo}}" alt="" class="photo">
+            <img src="../../../files/icons/sign-out.svg" alt="" class="signout">
+        </div>
+        <div *ngIf="isLoading">
+            loading...
+        </div>
+    </header>
+</nav>

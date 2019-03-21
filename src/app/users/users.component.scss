@@ -1,0 +1,77 @@
+.users {
+    text-align: center;
+    h2 {
+        text-align: center;
+        font-family: Overpass;
+        font-size: 42px;
+        font-style: SemiBold 600;
+    }
+    h4 {
+        text-align: left;
+        font-family: Overpass;
+        font-size: 22px;
+        font-style: SemiBold 600;
+        margin: 13px 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .container {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        padding: 140px 48px 0px 48px;
+        max-width: 1170px;
+        margin: 0 auto;
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 60px 0px;
+            .oneuser {
+                height: 155px;
+                width: 30%;
+                display: flex;
+                flex-direction: row;
+                text-align: left;
+                img {
+                    height: 70px;
+                    width: 70px;
+                    min-width: 70px;
+                    min-height: 70px;
+                    background-image: url('../../../files/imgs/fail.jpg');
+                    border-radius: 50%;
+                }
+                .text {
+                    max-width: calc(100% - 80px);
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 9px;
+                    color: #4c4b4b;
+                    font-size: 14px;
+                    p {
+                        margin: 5px 0px 0px 0px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+    button {
+        border-radius: 4px;
+        border-width: 2px;
+        border-color: #ef6c00;
+        border-style: solid;
+        width: 286px;
+        height: 36px;
+        color: #ef6c00;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        background: white;
+        margin-bottom: 20px;
+    }
+}

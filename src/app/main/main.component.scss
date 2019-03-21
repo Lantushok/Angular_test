@@ -1,0 +1,122 @@
+main {
+    h1 {
+        font-family: Overpass;
+        font-size: 50px;
+        font-style: SemiBold 600;
+    }
+    h2 {
+        text-align: center;
+        font-family: Overpass;
+        font-size: 42px;
+        font-style: SemiBold 600;
+    }
+    h3 {
+        font-family: Overpass;
+        font-size: 26px;
+        font-style: SemiBold 600;
+    }
+    .container {
+        font-family: 'Source Sans Pro';
+        font-weight: 400;
+        padding: 140px 48px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .banner {
+        background-image: url('../../../files/imgs/bg-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        color: #fff;
+        p {
+            font-size: 20px;
+            line-height: 26px;
+            margin: 31px 0px 45px 0px;
+        }
+        .container {
+            .info {
+                width: 50%;
+            }
+        }
+        button {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 4px;
+            background-color: #ef6c00;
+            width: 290px;
+            height: 40px;
+            border-color: transparent;
+        }
+    }
+    .aboutme {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            color: #4c4b4b;
+            font-size: 16px;
+        }
+        a {
+            color: #ef6c00;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .text {
+                margin-left: 30px;
+            }
+        }
+    }
+    .relationships {
+        .container {
+            padding-top: 0px;
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+        h3 {
+            margin: 28px 0px 15px 0px;
+        }
+        .techs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px;
+            .html,
+            .js,
+            .css {
+                width: 30%;
+            }
+            p {
+                color: #4c4b4b;
+                font-size: 16px;
+                margin: 0px;
+            }
+        }
+    }
+    .requirements {
+        background-image: url('../../../files/imgs/bg-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 16px;
+            p,
+            img {
+                width: 50%;
+            }
+            p {
+                margin-right: 50px;
+            }
+        }
+    }
+}
